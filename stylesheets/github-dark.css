@@ -1,7 +1,6 @@
 
 div#main {
     
-    font-family: Apex Serif Bold;
     color: black;
     font-size: 1.3em;
     font-weight: 800;
@@ -11,7 +10,6 @@ div#main {
 }
 div#div3 {
     
-    font-family: DIN Alternate;
     text-align: justify;
     text-indent: 1em;
     margin: 4em 17em 0 17em;
