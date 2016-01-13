@@ -18,12 +18,3 @@ div#div3 {
    
 }
 
-@font-face {
-    
-    font-family: 'DIN Alternate';
-    src: url('font/font.ttf');  
-    
-    font-family: Apex Serif Bold;
-    src: url('font/font1.otf')
-}
-
