@@ -1,6 +1,7 @@
 
 div#main {
     
+    font-family: "Montserrat";
     color: black;
     font-size: 1.3em;
     font-weight: 800;
@@ -18,4 +19,3 @@ div#div3 {
     min-width: 125px;
    
 }
-
