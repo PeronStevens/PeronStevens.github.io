@@ -1,5 +1,5 @@
 $(document).ready(function(){
-                $("#div3").fadeIn(2000)
+                $("p").fadeIn(2000),
+                $("h1").fadeIn(2000);
                 
 });
-
