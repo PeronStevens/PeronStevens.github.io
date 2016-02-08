@@ -10,6 +10,11 @@ a:hover {
   text-decoration: none;
 }
 
+p{
+  
+  display: none;
+}
+
 /* Custom default button */
 .btn-default,
 .btn-default:hover,
