@@ -1,5 +1,7 @@
 
-
+h1{
+    display: none;
+}
 
 div#main {
     
@@ -40,6 +42,7 @@ li {
 .header {
     font-family: "Montserrat";
 	text-align:center;
+    display: none;
 	font-size: 2em;
 	margin-top:1em;
 	margin-left:5%;
