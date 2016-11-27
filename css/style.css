@@ -7,6 +7,18 @@
 
     background-color: black;
 }
+.font{
+    text-decoration: underline;
+}
+.img{
+    width: 40%;
+    max-width: 40%;
+    margin: 30px;
+}
+.about-list{
+    font-size: 18px;
+    line-height: 3;
+}
 body {
     width: 100%;
     height: 100%;
