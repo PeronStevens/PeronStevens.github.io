@@ -7,12 +7,9 @@
 
     background-color: black;
 }
-.font{
-    text-decoration: underline;
-}
+
 .img{
-    width: 40%;
-    max-width: 40%;
+    max-width: 50%;
     margin: 30px;
 }
 .about-list{
