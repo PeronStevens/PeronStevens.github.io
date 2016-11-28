@@ -14,7 +14,7 @@
 }
 .about-list{
     font-size: 18px;
-    line-height: 3;
+    list-style-type: none;
 }
 body {
     width: 100%;
