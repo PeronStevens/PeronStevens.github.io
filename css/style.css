@@ -1,6 +1,7 @@
 .navbar a, .navbar button{
     color: #fff;
     font-family: 'Patua One', cursive;
+    font-size: 17pt;
 }
 .navbar a:hover{
 
@@ -17,16 +18,17 @@
 .info{
     background-color: yellow;
     margin-top: 45px;
-    width: 140px;
+    width: 170px;
 }
 .info-2{
     background-color: yellow;
     margin: 10px 0;
-    width: 260px;
+    width: 310px;
 }
 .name{
     font-size: 20px;
     font-family: 'Bitter', serif;
+    font-size: 18pt;
 }
 .content{
     height: 100vh;
