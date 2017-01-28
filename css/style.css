@@ -6,6 +6,9 @@
 .navbar a:hover{
 
 }
+.back{
+    background-color: yellow;
+}
 .navbar{
     background-color: gray;
 }
@@ -17,7 +20,7 @@
 }
 .info{
     background-color: yellow;
-    margin-top: 55px;
+    margin-top: 65px;
     width: 170px;
 }
 .info-2{
