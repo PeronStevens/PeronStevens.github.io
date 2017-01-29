@@ -6,8 +6,12 @@
 .navbar a:hover{
 
 }
+.nav > li > a:focus, .nav > li > a:hover{
+    background-color: yellow;
+    color: black;
+}
 .devicons{
-    font-size: 100px;;
+    font-size: 100px;
 }
 .toolbox{
     font-family: 'Bitter', serif;
