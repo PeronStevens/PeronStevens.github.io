@@ -16,6 +16,10 @@
 .devicons{
     font-size: 100px;
 }
+.fa-envelope{
+    color: yellow;
+    margin-top: 12px;
+}
 .toolbox{
     font-family: 'Bitter', serif;
 }
