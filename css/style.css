@@ -10,12 +10,17 @@
 .bio{
     font-family: 'Bitter', serif;
     font-size: 18pt;
-    background-color: yellow;  
+    background-color: yellow;
+    padding: 50px;  
 }
 .devicons{
     font-size: 100px;
 }
 .toolbox{
+    font-family: 'Bitter', serif;
+}
+.about{
+    color: yellow;
     font-family: 'Bitter', serif;
 }
 .back{
