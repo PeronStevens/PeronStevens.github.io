@@ -3,12 +3,14 @@
     font-family: 'Patua One', cursive;
     font-size: 17pt;
 }
-.navbar a:hover{
-
-}
 .nav > li > a:focus, .nav > li > a:hover{
     background-color: yellow;
     color: black;
+}
+.bio{
+    font-family: 'Bitter', serif;
+    font-size: 18pt;
+    background-color: yellow;  
 }
 .devicons{
     font-size: 100px;
@@ -24,7 +26,7 @@
 }
 .keyboard-img{
     margin-top: 70px;
-    width: 70%;
+    width: 90%;
     min-width: 280px;
     max-width: 600px;
 }
@@ -42,10 +44,12 @@
     font-size: 20px;
     font-family: 'Bitter', serif;
     font-size: 18pt;
+    height: 34.6px;
 }
 .content{
-    height: 100vh;
+    /*height: 100vh;*/
     display: none;
+    padding: 40px 0;
 }
 body{
     background-color: gray;
