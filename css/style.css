@@ -3,6 +3,9 @@
     font-family: 'Patua One', cursive;
     font-size: 17pt;
 }
+.navbar-toggle{
+    padding: 0px;
+}
 .nav > li > a:focus, .nav > li > a:hover{
     background-color: yellow;
     color: black;
