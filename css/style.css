@@ -57,9 +57,9 @@
 }
 .content{
     /*height: 100vh;*/
-    display: none;
     padding: 40px 0;
 }
 body{
+    display: none;
     background-color: gray;
 }   
