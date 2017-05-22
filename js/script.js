@@ -1,9 +1,10 @@
 $(document).ready(function(){
-    $(".tools").click(function(){
-        $(".devicon-wrap").slideUp();
+    $(".about").click(function(){
+        $("body").toggleClass("change");
+        $(".title, .list, .back").toggleClass("white");
     })
     $(".about").hover(function(){
         $("body").toggleClass("change");
-        $(".title, .list").toggleClass("white");
+        $(".title, .list, .back").toggleClass("white");
     })
 })
