@@ -1,68 +1,59 @@
-.navbar a, .navbar button{
+.title{
+    font-family: 'Fjalla One', sans-serif;
+}
+.list{
+    font-size: 20px;
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: bold;
+    /*border-top: 1px solid #000;
+    border-bottom: 1px solid #000;*/
+}
+.tools{
+    font-family: 'Arvo', serif;
+}
+.list > li:hover{
+    transition: 1s;
+    background: #000;
+    /*background-image: url("../img/hodgepodge.png");*/
     color: #fff;
-    font-family: 'Patua One', cursive;
-    font-size: 17pt;
 }
-.navbar-toggle{
-    padding: 0px;
-}
-.nav > li > a:focus, .nav > li > a:hover{
-    background-color: yellow;
-    color: black;
-}
-.bio{
-    font-family: 'Bitter', serif;
-    font-size: 18pt;
-    background-color: yellow;
-    padding: 10px 20%;    
-}
-.devicons{
-    font-size: 100px;
-}
-.fa-envelope{
-    color: yellow;
-    margin-top: 14px;
-}
-.toolbox{
-    font-family: 'Bitter', serif;
-}
-.about{
-    color: yellow;
-    font-family: 'Bitter', serif;
+.devicons:hover{
+    transition: 1s;
+    color: red;
 }
 .back{
-    background-color: yellow;   
+    font-size: 6pc;
 }
-.navbar{
-    background-color: gray;
+.about-wrap{
+    background-image: url("../img/design-tools.jpg");
 }
-.keyboard-img{
-    margin-top: 70px;
-    width: 90%;
-    min-width: 280px;
-    max-width: 600px;
-}
-.info{
-    background-color: yellow;
-    margin-top: 65px;
-    width: 170px;
-}
-.info-2{
-    background-color: yellow;
-    margin: 10px 0;
-    width: 310px;
-}
-.name{
+.about{
+    background-image: url("../img/hodgepodge.png");
+    /*background: #000;*/
+    font-family: 'Viga', sans-serif;
+    padding: 50px;
     font-size: 20px;
-    font-family: 'Bitter', serif;
-    font-size: 18pt;
-    height: 34.6px;
+    margin: auto;
+    min-width: 300px;
+    max-width: 500px;
+    color: #fff;
 }
-.content{
-    /*height: 100vh;*/
-    padding: 40px 0;
+.white{ color: #fff; 
+    font-family: 'Permanent Marker', cursive;
+ }
+.about:hover{
+    transition: 1s;
+    color: #000;
+    background: #fff;
+    /*background-image: url("../img/cloudy-day.png");*/
 }
-body{
-    display: none;
-    background-color: gray;
-}   
+.change{
+    transition: 1s;
+    background-image: url("../img/installpackage.gif");
+}
+ @media screen and (max-width: 480px) {
+    .back {
+        background-image: url("../img/design-tools.jpg");
+        color: #fff;
+    }
+}

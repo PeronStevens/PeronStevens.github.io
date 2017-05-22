@@ -1,9 +1,9 @@
-$().ready(function(){
-    $("body").fadeIn(4000);
-
-    $("#title").typed({
-        strings: ["UNIX enthusiast", "Some guy with a keyboard", "Likes keyboard shortcuts", "Full Stack Web Developer"],
-        typeSpeed: 0,
-        showCursor: false
-    });
-});
+$(document).ready(function(){
+    $(".tools").click(function(){
+        $(".devicon-wrap").slideUp();
+    })
+    $(".about").hover(function(){
+        $("body").toggleClass("change");
+        $(".title, .list").toggleClass("white");
+    })
+})
