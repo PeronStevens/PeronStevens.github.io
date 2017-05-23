@@ -14,9 +14,11 @@
 .list > li:hover{
     transition: 1s;
     background: #000;
-    /*background-image: url("../img/hodgepodge.png");*/
+}
+.list > li > a:hover{
     color: #fff;
 }
+a{ color: #000; }
 .devicons:hover{
     transition: 1s;
     color: red;
