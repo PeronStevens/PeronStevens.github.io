@@ -51,7 +51,7 @@ a{ color: #000; }
 }
 .change{
     transition: 1s;
-    background-image: url("../img/installpackage.gif");
+    background-image: url("../img/linux.gif");
 }
  @media screen and (max-width: 480px) {
     .back {
