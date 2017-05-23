@@ -21,15 +21,24 @@ a{ color: #000; }
     transition: .5s;
     color: red;
 }
-
+.fire{
+    background-image: url("../img/code-fire.gif");
+    z-index: 1;
+}
+.envelope{
+    width: 70px;
+    margin: 10px;
+}
 .back{
     font-size: 6pc;
 }
 .about-wrap{
     background-image: url("../img/design-tools.jpg");
 }
-.about{
+.about-background{
     background-image: url("../img/hodgepodge.png");
+}
+.about{
     font-family: 'Viga', sans-serif;
     padding: 50px;
     font-size: 20px;
