@@ -7,12 +7,8 @@ $(document).ready(function(){
     //     $("body").toggleClass("change");
     //     $(".title, .list, .back, a").toggleClass("white");
     // })
-    $(function(){
-        $(".about-wrap").bind("tap", tapChange)
-
-        function tapChange(){
-            $("body").toggleClass("change");
-            $(".title, .list, .back, a").toggleClass("white");
-        }
+    $(".about").on("tap", function(){
+        $("body").toggleClass("change");
+        $(".title, .list, .back, a").toggleClass("white");
     })
 })
