@@ -45,8 +45,7 @@ a{ color: #000; }
     font-family: 'Permanent Marker', cursive;
  }
  .white{ 
-    color: #fff; 
-    /*font-family: 'Permanent Marker', cursive;*/
+    color: #fff;    
  }
 .about:hover{
     transition: 1s;
