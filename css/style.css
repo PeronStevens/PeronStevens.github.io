@@ -27,10 +27,10 @@ li:hover{
 .devicons{
     font-size: 80px;
 }
-#footer{
+#header{
      /*background-image: url("../img/paper.gif");    */
-     background: #000;
-     height: 50px;
+     background: blue;
+     height: 10px;
 }
 .content-wrap{
     height: 92vh;
