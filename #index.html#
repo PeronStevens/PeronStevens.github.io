@@ -1,23 +1,24 @@
-<!DOCTYPE html>
+uuuu0<!DOCTYPE html>
 <html lang="en">
     <head>
         <title></title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="css/jquery.mobile-1.4.5.min" href="">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:700" rel="stylesheet"> 
-        <link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet"> 
         <link href='//cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css' rel='stylesheet'>
+        <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Viga" rel="stylesheet">
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
-                <h1 class="heading">Son of a Postman</h1>
-                <h3 class="sub-heading">I like programmming and operating systems</h3>
-                <hr>
                 <div class="col-sm-12 text-center">
+                    <span><img class="envelope" src="img/wp6114336b.gif" alt=""></span>
+                    <h1 class="title">Son of A <br> Postman</h1>
                     <ul class="list list-inline">
                         <li><a href="https://github.com/PeronStevens"> Github </a></li>
                         <li><a href="https://bitbucket.org/unix-like/">BitBucket</a></li>
@@ -31,21 +32,24 @@
                 </p>
             </div>
             <div class="row back text-center">
-                <div class="col-sm-12">
-                    <span class="devicons devicons-mysql"></span>
-                    <span class="devicons devicons-composer"></span>
-                    <span class="devicons devicons-javascript"></span>
-                </div>
-                <div class="col-sm-12">
-                    <span class="devicons devicons-php"></span>
-                    <span class="devicons devicons-postgresql"></span>
-                    <span class="devicons devicons-nginx"></span>
-                </div>
-                <div class="col-sm-12">
-                    <span class="devicons devicons-git"></span>
-                    <span class="devicons devicons-nodejs"></span>
-                    <span class="devicons devicons-linux"></span>
-                </div>    
+                <h2 class="tools">&lttooling></h2>
+                <div class="icon-wrap">
+                    <div class="col-sm-12">
+                        <span class="devicons devicons-mysql"></span>
+                        <span class="devicons devicons-composer"></span>
+                        <span class="devicons devicons-javascript"></span>
+                    </div>
+                    <div class="col-sm-12">
+                        <span class="devicons devicons-php"></span>
+                        <span class="devicons devicons-postgresql"></span>
+                        <span class="devicons devicons-nginx"></span>
+                    </div>
+                    <div class="col-sm-12">
+                        <span class="devicons devicons-git"></span>
+                        <span class="devicons devicons-nodejs"></span>
+                        <span class="devicons devicons-linux"></span>
+                    </div>    
+                </div>          
             </div>
         </div>
     <script src="js/jquery-3.2.1.min.js"></script>

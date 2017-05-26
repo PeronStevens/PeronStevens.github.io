@@ -1,66 +1,29 @@
-.title{
-    font-family: 'Fjalla One', sans-serif;
+.heading{
+    font-family: 'Open Sans', sans-serif;
+}
+.list, .about, .sub-heading{
+    font-family: 'EB Garamond', serif;
 }
 .list{
     font-size: 20px;
-    font-family: 'Fjalla One', sans-serif;
-    font-weight: bold;
 }
-.tools{
-    font-family: 'Arvo', serif;
+.about{
+    font-size: 20px;
 }
-.list > li:hover{
+.about-wrap{
+    padding: 0px 30px;
+}
+a{
+    color: #000;
+}
+a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+li:hover{
     transition: 1s;
     background: #000;
 }
-.list > li > a:hover{
-    color: #fff;
-}
-a{ color: #000; }
-.devicons:hover{
-    transition: .5s;
-    color: red;
-}
-.fire{
-    background-image: url("../img/code-fire.gif");
-    z-index: 1;
-}
-.envelope{
-    width: 70px;
-    margin: 10px;
-}
-.back{
-    font-size: 6pc;
-}
-.about-wrap{
-    background-image: url("../img/design-tools.jpg");
-}
-.about-background{
-    background-image: url("../img/hodgepodge.png");
-}
-.about{
-    font-family: 'Viga', sans-serif;
-    padding: 50px;
-    font-size: 20px;
-    margin: auto;
-    min-width: 300px;
-    max-width: 500px;
-    color: #fff;
-}
-.white-text{ 
-    color: #fff; 
-    font-family: 'Permanent Marker', cursive;
- }
- .white{ 
-    color: #fff;    
- }
-.change{
-    transition: 1s;
-    background-image: url("../img/linux.gif");
-}
- @media screen and (max-width: 480px) {
-    .back {
-        background-image: url("../img/design-tools.jpg");
-        color: #fff;
-    }
+.devicons{
+    font-size: 80px;
 }
