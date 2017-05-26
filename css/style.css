@@ -3,15 +3,19 @@
 }
 .heading{
     font-family: 'Open Sans', sans-serif;
+    font-size: 36px;
+}
+.sub-heading{
+    font-size: 30px;
 }
 .list, .about, .sub-heading{
     font-family: 'EB Garamond', serif;
 }
 .list{
-    font-size: 20px;
+    font-size: 25px;
 }
 .about{
-    font-size: 20px;
+    font-size: 28px;
 }
 .about-wrap{
     padding: 10px 30px;
