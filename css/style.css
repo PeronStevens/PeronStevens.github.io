@@ -1,3 +1,6 @@
+.heading, .sub-heading{
+    padding: 10px;
+}
 .heading{
     font-family: 'Open Sans', sans-serif;
 }
@@ -13,9 +16,6 @@
 .about-wrap{
     padding: 10px 30px;
 }
-a{
-    /*color: #000;*/
-}
 a:hover {
     text-decoration: none;
     color: #fff;
@@ -25,10 +25,9 @@ li:hover{
     background: #000;
 }
 .devicons{
-    font-size: 80px;
+    font-size: 90px;
 }
 #header{
-     /*background-image: url("../img/paper.gif");    */
      background: blue;
      height: 10px;
 }
