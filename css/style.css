@@ -1,7 +1,7 @@
 .heading, .sub-heading{
     padding: 10px;
 }
-.heading{
+.heading, .tooling-title{
     font-family: 'Open Sans', sans-serif;
     font-size: 36px;
 }
@@ -31,6 +31,10 @@ li:hover{
 .devicons{
     font-size: 90px;
 }
+.devicons:hover{
+    transition: 1s;
+    color: blue;
+}
 #header{
      background: blue;
      height: 10px;
@@ -38,3 +42,25 @@ li:hover{
 .content-wrap{
     height: 92vh;
 }
+.tooling-title{
+    
+}
+
+
+/*@-webkit-keyframes blink {
+    from, to { border-color: transparent }
+    50% { border-color: black }
+}
+
+@-moz-keyframes blink {
+    from, to { border-color: transparent }
+    50% { border-color: black }
+}
+
+.blink {
+    width:100px;
+    height:100px;
+    border-left:2px solid black;
+    -webkit-animation: 1s blink step-end infinite;
+    -moz-animation: 1s blink step-end infinite;
+}*/
