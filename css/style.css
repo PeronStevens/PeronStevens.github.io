@@ -32,7 +32,7 @@ li:hover{
     font-size: 90px;
 }
 .devicons:hover{
-    transition: 1s;
+    transition: .5s;
     color: blue;
 }
 #header{
@@ -45,7 +45,13 @@ li:hover{
 .tooling-title{
     
 }
-
+.contact-img{
+    width: 40px;
+}
+.contact-wrap{
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
 
 /*@-webkit-keyframes blink {
     from, to { border-color: transparent }
