@@ -11,10 +11,10 @@
     font-size: 20px;
 }
 .about-wrap{
-    padding: 0px 30px;
+    padding: 10px 30px;
 }
 a{
-    color: #000;
+    /*color: #000;*/
 }
 a:hover {
     text-decoration: none;
@@ -26,4 +26,12 @@ li:hover{
 }
 .devicons{
     font-size: 80px;
+}
+#footer{
+     /*background-image: url("../img/paper.gif");    */
+     background: #000;
+     height: 50px;
+}
+.content-wrap{
+    height: 92vh;
 }
