@@ -52,6 +52,12 @@ li:hover{
     margin-top: 100px;
     margin-bottom: 30px;
 }
+@media screen and (max-width: 480px) {
+    .heading, .sub-heading {
+        text-align: center;
+    }
+}
+
 /*@-webkit-keyframes blink {
     from, to { border-color: transparent }
     50% { border-color: black }
