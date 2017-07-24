@@ -24,9 +24,11 @@ a:hover {
     text-decoration: none;
     color: #fff;
 }
+li > a{
+    color: #000;
+}
 li:hover{
     transition: 1s;
-    background: #000;
 }
 .devicons{
     font-size: 90px;
