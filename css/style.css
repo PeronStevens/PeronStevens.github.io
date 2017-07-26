@@ -35,7 +35,9 @@ body{
     to   { opacity: 1; }
 }
 
-
+.git-icon{
+    font-size: 70px !important;
+}
 .heading, .sub-heading{
     padding: 10px;
 }
