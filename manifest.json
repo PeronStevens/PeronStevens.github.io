@@ -6,11 +6,6 @@
             "src": "http://www.pamorama.net/corepam/wp-content/uploads/2013/04/role-of-color-in-social-med.gif",
             "sizes": "180x180",
             "type": "image/png"
-        },
-        {
-            "src": "https://s-media-cache-ak0.pinimg.com/736x/30/55/0e/30550e808dad5e2b834daf4c17f1de84--colour-wheel-color-theory.jpg",
-            "sizes": "192x192",
-            "type": "image/png"
         }
     ],
     "theme_color": "#ffffff",
