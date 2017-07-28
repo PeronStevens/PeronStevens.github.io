@@ -3,7 +3,7 @@
     "short_name" : "Postman",
     "icons": [
         {
-            "src": "http://www.pamorama.net/corepam/wp-content/uploads/2013/04/role-of-color-in-social-med.gif",
+            "src": "apple-icon-152x152.png",
             "sizes": "180x180",
             "type": "image/png"
         }
