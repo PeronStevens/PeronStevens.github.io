@@ -51,10 +51,13 @@ body{
     font-size: 30px;
 }
 .list, .about, .sub-heading{
-    /* font-family: 'EB Garamond', serif; */
-    
 
-    font-family: 'Nixie One', cursive;
+
+
+
+    font-family: 'Antic Slab', serif;
+
+
 
 
 }
