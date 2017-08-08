@@ -52,12 +52,7 @@ body{
 }
 .list, .about, .sub-heading{
 
-
-    font-family: 'Quicksand', sans-serif;
-
-
-
-
+    font-family: 'Inconsolata', monospace;
 }
 .list{
     font-size: 25px;
@@ -84,7 +79,7 @@ li:hover{
 }
 .devicons:hover{
     transition: .5s;
-    color: blue;
+    color: orange;
 }
 #header{
      background:#e7eeff;
