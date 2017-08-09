@@ -40,6 +40,11 @@ body{
 .git-icon{
     font-size: 70px !important;
 }
+.heading{
+    color: orange;
+    width: 342px;
+    border: 2px solid orange;
+}
 .heading, .sub-heading{
     padding: 10px;
 }
@@ -82,7 +87,7 @@ li:hover{
     color: orange;
 }
 #header{
-     background:#e7eeff;
+     background: orange;
      height: 10px;
 }
 .content-wrap{
