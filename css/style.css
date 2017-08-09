@@ -105,7 +105,9 @@ li:hover{
 }
 @media screen and (max-width: 480px) {
     .heading, .sub-heading {
-        text-align: center !important;
+        margin: auto;
+        text-align: center;
+        padding-top: 15px;
     }
 }
 
