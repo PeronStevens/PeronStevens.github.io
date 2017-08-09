@@ -3,7 +3,7 @@
     "short_name" : "Postman",
     "icons": [
         {
-            "src": "icon.png",
+            "src": "o-icon.png",
             "sizes": "190x190",
             "type": "image/png"
         }
