@@ -43,7 +43,7 @@ body{
 .heading{
     color: orange;
     width: 342px;
-    border: 2px solid orange;
+    /* border: 2px solid orange; */
 }
 .heading, .sub-heading{
     padding: 10px;
