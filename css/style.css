@@ -56,9 +56,12 @@ font-family: 'Domine', serif;
 .sub-heading{
     font-size: 30px;
 }
-.list, .about, .sub-heading{
+.list, .about, .sub-heading, .samp{
 
     font-family: 'Inconsolata', monospace;
+}
+.samp{
+    font-size: 24px;
 }
 .list{
     font-size: 25px;
@@ -72,6 +75,10 @@ font-family: 'Domine', serif;
 a:hover {
     text-decoration: none;
     color: #fff;
+
+}
+.list > li > a{
+    color: #FFF;
 }
 li > a{
     color: #000;
