@@ -78,7 +78,9 @@ a:hover {
 
 }
 .list > li > a{
-    color: #FFF;
+    color: #000;
+    font-family: 'Domine', serif;
+    background: orange;
 }
 li > a{
     color: #000;
