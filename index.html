@@ -1,66 +1,74 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <title>kernel</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="icon" href="o-favicon.ico" type="image/x-icon"/> 
-        <link rel="apple-touch-icon" href="o-icon.png">
-        <link rel="manifest" href="manifest.json">
-     <link href="https://fonts.googleapis.com/css?family=Domine:700" rel="stylesheet"> 
-        <!-- <link href="https://fonts.googleapis.com/css?family=Merriweather:700" rel="stylesheet">  -->
-        <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
-        <link href='//cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css' rel='stylesheet'>
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/style.css" rel="stylesheet">
-    </head>
-    <body>
-        <header id="header"></header>
-        <div class="container">
-            <div class="row">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-                <a href="https://peronstevens.github.io/"> <h1 class="heading">kernel.</h1> </a>
-                <h3 class="sub-heading">I enjoy programming and UNIX.</h3>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+    <style>
+        .nav a {
+            color: #000;
+        }
+        .nav {
+            margin-top: 20px;
+        }
+        .name {
+            background: #000;
+            color: #fff;
+        }
+        .email-icon {
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            right: 0;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container" >
+        <div class="row" >
+            <div class="col-sm" >
+                <img class="email-icon"  src="email.png" alt="" width="50" >
+                <h2 class="heading"><span class="name" >Peron Stevens</span></h2>
+                <ul class="nav justify-content-center">
+                    <li class="nav-item">
+                    <a class="nav-link home" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link contact" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link thoughts" href="#">Thoughts</a>
+                    </li>
+                </ul>
                 <hr>
-                <div class="col-sm-12 text-center">
-                    <ul class="list list-inline">
-                         <li><a href="https://github.com/PeronStevens"> Github </a></li> 
-                         <li><a href="https://peronstevens.github.io/samp.html">Work</a></li> 
-                        <!--<li><a href="https://peronstevens.github.io/resume.pdf.html">Resume</a></li>-->
-                    </ul>
-                    <ul class="list list-inline">
-                        <!-- <li><a href="https://github.com/PeronStevens"> <span class="git-icon devicons devicons-github"></span>  </a></li> -->
-<!--                         <li><a href="https://bitbucket.org/unix-like/"> <span class="devicons devicons-bitbucket"></span> </a></li> -->
-<!--                         <li><a href="https://www.liveedu.tv/unix-like/profile/"> <span class="devicons devicons-html5_multimedia"></span> </a></li> -->
-                    </ul>
-                </div>
+                 <div class="home-content" >
+                     Enim aliqua nulla et anim ea. Consequat duis fugiat et ut dolor id deserunt laborum tempor nisi officia voluptate aute. Sint id do consectetur consequat Lorem eiusmod mollit reprehenderit. Cillum ipsum enim ullamco in quis. Est deserunt cillum fugiat in amet quis aliquip sit. Dolore dolore commodo adipisicing amet cupidatat consectetur laborum amet Lorem adipisicing aliquip excepteur amet.
+                 </div> 
+                 <div class="contact-content " >
+                    Esse excepteur in non culpa exercitation laboris ipsum. Cillum esse velit laborum esse tempor do est. Magna laboris velit ipsum sit excepteur pariatur sit cupidatat et ex amet.
+                </div>                                   
+                 <div class="thoughts-content " >
+                     In elit qui consectetur dolor. Ullamco do et occaecat quis ad. Aliquip ea incididunt fugiat amet tempor adipisicing esse ad.
+                 </div>
             </div>
-            <div class="row about-wrap">
-                <p class="about about-background">                     
-                    Hey there, My name is Peron, I'm a web developer commanding a LAMP stack with HTML, CSS & JS on the frontend. Though not just a web guy, I have an appreciation of hardware and operating systems, especially UNIX-like. When I'm not writing code, I like gaming, football and an occasional stroll around the city. 
-                </p>
-            </div>
-            <div class="row back text-center">
-                <hr>
-                <div class="col-sm-4">
-                    <span class="devicons devicons-mysql"></span>
-                    <span class="devicons devicons-composer"></span>
-                    <span class="devicons devicons-javascript"></span>
-                </div>
-                <div class="col-sm-4">
-                    <span class="devicons devicons-php"></span>
-                    <span class="devicons devicons-postgresql"></span>
-                    <span class="devicons devicons-nginx"></span>
-                </div>
-                <div class="col-sm-4">
-                    <span class="devicons devicons-git"></span>
-                    <span class="devicons devicons-nodejs"></span>
-                    <span class="devicons devicons-linux"></span>
-                </div>    
-            </div>
-            <div class="contact-wrap text-center">
-                <a  class="" href="mailto:peronstevens@yahoo.com"><img class="contact-img" src="img/584856b4e0bb315b0f7675ac.png" alt=""></a>
-            </div>
-        </div>          
-    </body>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script>
+        $(".contact-content, .thoughts-content").hide();
+        $(".home, .contact, .thoughts").click(function(e) {
+            $(".home-content, .contact-content, .thoughts-content").hide();
+            $("." + $(this)[0].classList[1] + "-content").show();
+        })
+    </script>
+  </body>
 </html>
