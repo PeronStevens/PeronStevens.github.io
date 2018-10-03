@@ -11,21 +11,26 @@
     <title>Hello, world!</title>
     <style>
         body {
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: monospace;
             background: indianred;
             color: beige;
             font-size: 20px;
-            min-width:400px;
         }
         .nav a {
-            color: #000;
+            color: turquoise;
+        }
+        .nav a:hover {
+            
         }
         .nav {
             margin-top: 20px;
         }
-        .name {
-            /* background: #000;
-            color: #fff; */
+        .email-icon {
+            z-index: 999;
+            width: 50px;
+        }
+        hr {
+            border-color: beige;
         }
         .heading{
             margin-top: 10px;
@@ -36,28 +41,39 @@
             bottom: 0;
             right: 0;
         }
+        ul {
+            list-style-type: none;
+        }
+        .dev-icon-grand img {
+            width: 80px;
+        }
+        .content-container {
+            margin-bottom: 20px;
+        }
     </style>
   </head>
   <body>
     <div class="container" >
         <div class="row" >
-            <div class="col-sm" >
-                <img class="email-icon"  src="email.png" alt="" width="50" >
-                <h2 class="heading"><span class="name" >/var/www/index.html</span></h2>
-                <ul class="nav justify-content-center">
-                    <li class="nav-item">
-                    <a class="nav-link home" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link contact" href="#">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link thoughts" href="#">Thoughts</a>
-                    </li>
-                </ul>
-                <hr>
+            <div class="col-sm-12" >
+                    <img class="email-icon"  src="email.png" alt="" width="50" >
+                    <h2 class="heading"><span class="name" >/var/www/index.html</span></h2>
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item">
+                        <a class="nav-link home" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link contact" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link thoughts" href="#">Thoughts</a>
+                        </li>
+                    </ul>
+                    <hr>
+            </div>
+            <div class="col-sm content-container" >
                  <div class="home-content" >
-                     Enim aliqua nulla et anim ea. Consequat duis fugiat et ut dolor id deserunt laborum tempor nisi officia voluptate aute. Sint id do consectetur consequat Lorem eiusmod mollit reprehenderit. Cillum ipsum enim ullamco in quis. Est deserunt cillum fugiat in amet quis aliquip sit. Dolore dolore commodo adipisicing amet cupidatat consectetur laborum amet Lorem adipisicing aliquip excepteur amet.
+                     I develop php web applications.
                  </div> 
                  <div class="contact-content " >
                     Esse excepteur in non culpa exercitation laboris ipsum. Cillum esse velit laborum esse tempor do est. Magna laboris velit ipsum sit excepteur pariatur sit cupidatat et ex amet.
@@ -65,6 +81,30 @@
                  <div class="thoughts-content " >
                      In elit qui consectetur dolor. Ullamco do et occaecat quis ad. Aliquip ea incididunt fugiat amet tempor adipisicing esse ad.
                  </div>
+            </div>
+            <div class="col-sm text-center dev-icon-grand" >
+                <ul class="list-inline" >
+                    <li class="list-inline-item" >
+                        <img src="img/php.svg" alt="">
+                    </li>
+                    <li class="list-inline-item" >
+                        <img src="img/js_badge.svg" alt="">
+                    </li>
+                    <li class="list-inline-item" >
+                        <img src="img/mysql.svg" alt="">
+                    </li>                                            
+                </ul>
+                <ul class="list-inline" >
+                    <li class="list-inline-item" >
+                        <img src="img/linux.svg" alt="">
+                    </li>
+                    <li class="list-inline-item" >
+                        <img src="img/git.svg" alt="">
+                    </li>
+                    <li class="list-inline-item" >
+                        <img src="img/terminal.svg" alt="">
+                    </li>                                            
+                </ul>                
             </div>
         </div>
     </div>
@@ -74,9 +114,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script>
+        // $(".content-container").children().hide();
         $(".contact-content, .thoughts-content").hide();
         $(".home, .contact, .thoughts").click(function(e) {
-            $(".home-content, .contact-content, .thoughts-content").hide();
+            $(".content-container").children().hide();
+            console.log((this));
             $("." + $(this)[0].classList[1] + "-content").show();
         })
     </script>
