@@ -36,10 +36,16 @@ body {
     padding: 0 30px;
     font-size: 2em;
     background: #F5CF8E;
-
 }
 
-.home {
+.icon-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home,
+.icon-menu {
     width: 100%;
 }
 
@@ -49,5 +55,9 @@ body {
     }
     .images {
         width: 40%;
+    }
+    .home,
+    .icon-menu {
+        width: 50%;
     }
 }
