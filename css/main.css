@@ -60,15 +60,22 @@ body {
     font-size: 30px;
 }
 
-.icon-menu i {
-    margin-left: 20px;
-}
-
 .icon-menu p {
-    background: #EAFDF0;
     padding: 10px;
-}
+    margin: 0;
+    margin-left: 10px;
+    position: relative;
+    top:  20px;
+    right: 30px;
+    background: #C8C6FA;
+    border: 2px solid #000;
 
+}
+.menu-wrap {
+    display: flex;
+    background: #F5CF8E;
+    heigh:; 
+}
 
 .images {
     width: 100%;
