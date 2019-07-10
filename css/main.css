@@ -3,168 +3,72 @@
 }
 
 body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
     height: 100vh;
-    background: #F09A9D;
-    max-width: 900px;
-    margin: 0 auto;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* background: #B34E7E;
+    color: #FFF8B8; */
+}
+
+.letter-box-container {
+    display: flex;
+    /* justify-content: center; */
+}
+
+.letter-box {
+    width: 70px;
+    height: 70px;
+    border: 1px solid #000;
+    text-align: center;
+    background:#1900b3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.letter {
+    margin: 0;
+    font-size: 2em;
+    color: #ff9d05;
+}
+
+.top-color  {
+    height: 10px;
+    background: orange;
+    border-bottom: 2px solid #000;
 }
 
 .container {
-    width: 100%;
     display: flex;
-    flex-wrap: wrap;
+    margin-top: 30px;
 }
 
-.header {
-    height: 20px;
-    display: flex;
+.billboard,
+.content {
+    padding: 20px;
 }
 
-.one {
-    width: 50%;
-    background: rgb(64, 40, 110);
-}
-.two {
-    width: 50%;
-    background: rgb(182, 65, 172);
+.billboard {
+    flex-basis: 30%;
 }
 
-.sub-wrap {
-    display: flex;
-    flex-wrap: wrap;
+.content {
+    flex-basis: 70%;
 }
 
-.sub-name {
-    font-size: 25px;
-    width: fit-content;
-    width: 194px;
-    background: #000;
-    color: #fff;
-    padding: 7px;
-    border-left: 8px solid #F5CF8E;
+.post-link {
+    text-decoration: none;
+    color: #1900b3;
 }
 
-.name {
-    font-size: 50px;
-    width: fit-content;
-    width: 327px;
-    background: #000;
-    color: #fff;
-    padding: 7px;
-    border-left: 8px solid #F5CF8E;
-}
-
-.about {
-    padding: 0 30px;
-    font-size: 2em;
-    /* background: wheat; */
-    border-top: 7px solid #000;
-}
-
-.icon-menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    font-size: 30px;
-}
-
-.icon-menu p {
-    padding: 10px;
-    margin: 0;
-    /* margin-left: 10px; */
-    /* position: relative; */
-    top:  20px;
-    right: 30px;
-    background: #C8C6FA;
-    border: 2px solid #000;
-}
-
-.icon-menu  p:hover {
-    transition: 1s;
-    background-color: #5995DA;
-    cursor: pointer;
-}
-
-.menu-wrap {
-    display: flex;
-    background: purple;
-    border: 5px solid;
-    /* background-image: url('https://66.media.tumblr.com/d103eb823dce2842c673f409f036857b/tumblr_mzx9wrdwFa1snc5kxo1_1280.gif'); */
-    background-size: cover;
-    background-position: 0 -23px;
-}
-
-.menu-wrap p {
-    font-size: 39px;
-}
-
-.images {
-    width: 100%;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 800;
-}
-
-.home,
-.icon-menu {
-    width: 50%;
-}
-
-.image-block {
-    width: 100%;
-    height: 100%;
-    /* background: #B2D6FF; */
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.block {
-    padding: 10px;
-    font-size: 2em;
-    width: 33.3%;
-    /* border: 2px solid #000; */
-    text-align: center;
-}
-
-.block .icon {
-    font-size: 70px;
-    margin: 0;
-}
-
-.block small {
-    font-size: 20px;
-}
-
-.block hr {
-    border-bottom: 3px solid;
-}
-
-@media (max-width: 670px) {
-    .home,
-    .icon-menu {
-        width: 100%;
+@media (max-width: 576px) {
+    .container {
+        display: initial;
     }
-}
-
-@media (min-width: 768px) {
-    .about {
-        width: 60%;
+    .billboard {
+        padding-bottom: 0;
     }
-    .about p {
-        border-right: 30px solid #5995DA;
-    }
-    .images {
-        width: 40%;
-    }
-    .home,
-    .icon-menu {
-        width: 50%;
-    }
-    .image-block {
-        position: relative;
-        right: 40px;
-        top: 40px;
-        border: 2px solid #000;        
+    .content {
+        padding-top: 0;
     }
 }
