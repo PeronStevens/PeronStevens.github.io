@@ -6,7 +6,8 @@ body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     height: 100vh;
-    background: burlywood;
+    background: #deb88759;
+    /* background: burlywood; */
     /* background: #B34E7E;
     color: #FFF8B8; */
 }
