@@ -6,6 +6,7 @@ body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     height: 100vh;
+    background: burlywood;
     /* background: #B34E7E;
     color: #FFF8B8; */
 }
@@ -54,6 +55,10 @@ body {
 
 .content {
     flex-basis: 70%;
+}
+
+.link {
+    text-decoration: none;
 }
 
 .post-link {
