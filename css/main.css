@@ -6,7 +6,8 @@ body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     height: 100vh;
-    background: #deb88759;
+    /* background: #e9c5c5; */
+    /* background: #deb88759; */
     /* background: burlywood; */
     /* background: #B34E7E;
     color: #FFF8B8; */
@@ -22,7 +23,7 @@ body {
     height: 70px;
     border: 1px solid #000;
     text-align: center;
-    background:#1900b3;
+    /* background:#1900b3; */
     display: flex;
     align-items: center;
     justify-content: center;
