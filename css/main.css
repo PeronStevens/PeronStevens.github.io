@@ -9,7 +9,7 @@ body {
     
     font-family: 'Signika Negative', sans-serif;
 
-    font-size: 1.2em;
+    font-size: 1.1em;
     /* font-family: Arial, Helvetica, sans-serif; */
     height: 100vh;
     background-color: #3d4852;
@@ -90,9 +90,9 @@ ul {
 }
 
 @media (max-width: 576px) {
-    body {
+    /* body {
         font-size: 1.1em;
-    }
+    } */
     .container {
         display: initial;
     }
