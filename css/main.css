@@ -7,9 +7,11 @@ body {
     
     /* font-family: 'Heebo', sans-serif; */
     
-    font-family: 'Signika Negative', sans-serif;
+    /* font-family: 'Signika Negative', sans-serif; */
+    font-family: 'Roboto Condensed', sans-serif;
 
-    font-size: 1.1em;
+
+    font-size: 1.13em;
     /* font-family: Arial, Helvetica, sans-serif; */
     height: 100vh;
     background-color: #3d4852;
@@ -90,9 +92,9 @@ ul {
 }
 
 @media (max-width: 576px) {
-    /* body {
-        font-size: 1.1em;
-    } */
+    body {
+        font-size: 1.2em;
+    }
     .container {
         display: initial;
     }
