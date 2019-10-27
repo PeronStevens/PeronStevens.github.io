@@ -85,6 +85,7 @@ ul {
 }
 
 pre {
+    font-family: monospace;
     overflow: scroll;
     max-width: 400px;
     width: 100%;
@@ -113,5 +114,8 @@ pre {
     }
     .content {
         padding-top: 0;
+    }
+    pre {
+        max-width: 576px;
     }
 }
