@@ -73,6 +73,7 @@ ul {
 .link {
     text-decoration: none;
     color: #fff;
+    word-break: break-all;
 }
 
 .link-white {
