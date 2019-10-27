@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>200 OK!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/main.css?v=3" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145406687-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-145406687-1');
+    </script>
+
+</head>
+<body>
+    <div class="top-color" ></div>
+    <main class="container">
+        <section class="billboard" >
+            <div>
+                <a class="link" href="../index.html">
+                    <div class="letter-box-container">
+                        <div class="letter-box" >
+                            <h2 class="letter">P</h2>
+                        </div>
+                    </div>
+                </a>
+                <p>
+                    <strong>Peron Stevens</strong>
+                    <br>
+                    <small>Web Developer</small>
+                </p>
+                <p>
+                    My name is Peron, I'm a Web Developer in New York City, currently working with Laravel and Vue
+                </p>
+                <p>
+                    <a class="link" href="../projects.html">Projects</a>
+                </p>
+                <p>
+                    <a class="link" href="../tinkering.html">Tinkering</a>
+                </p>                
+                <p>
+                    <a class="link"  href="../PeronResume.pdf">Resume</a>
+                </p>
+                <p>
+                    <a class="link"  href="../mailto:peronstevens@yahoo.com">Contact</a>
+                </p>                               
+            </div>
+        </section>
+        <section class="content" >
+            <h3>Using Vue watchers to format flat JSON</h3>
+            <p>
+                While tinkering with <a class="link-white" href="link">TheCocktailDB</a> API, I noticed that it returned a single JSON object, ex:
+            </p>
+
+                    <pre>
+                    ... <br>
+                    strIngredient1	"Bourbon" <br>
+                    strIngredient2	"Dark rum" <br>
+                    strIngredient3	"Heavy cream" <br>
+                    strIngredient4	null <br>
+                    ...
+                    </pre>
+
+            <p>
+                Endpoint: https://www.thecocktaildb.com/api/json/v1/1/random.php
+            </p>            
+            <p>
+                It returns NULL properties too. Passing this JSON object to a Vue component to parse and render would be clunky at best. So instead of dealing with this flat JSON, we can use watchers to parse and format it much more effeciently!
+            </p>
+            <p>
+                Imagine you have a main component that makes an AJAX request to the endpoint and recieves the JSON, naturally you assign it within your data object.
+            </p>
+
+                    <pre>
+                    axios.get('https://www.thecocktaildb.com/api/json/v1/1/random.php') <br>
+                    .then((response) => {            <br>
+                        this.drinkData = response.data.drinks[0]; <br>
+                    })   
+                    </pre>
+        
+
+                    <pre>
+                    data: function() {
+                        return {
+                            drinkData: {}
+                        }
+                    }
+                    </pre>
+
+            <p>
+                For simplicity sake, I will only focus on the strIngredient properties. Now lets add an empty array to our data object to only contain the ingredients
+            </p>
+
+                    <pre>
+                    data: function() {
+                        return {
+                            drinkData: {},
+                            ingredients: []
+                        }
+                    }
+                    </pre>
+            <p>
+                Now we can create a new watcher, to iterate over our flat JSON and push ingredients to the array. We simply pass our drinkData object and give it a function to execute when it's populated
+            </p>  
+                    <pre>
+                    watch: {
+                        drinkData: function() {
+                            for (let [key, value] of Object.entries(this.drinkData)) {
+                                if (value) {
+                                    if (key.includes('strIngredient')) this.ingredients.push(value)
+                                }
+                            }
+                        }
+                    }
+                    </pre>
+ 
+            <p>
+                We use Object.entries to grab the keys and values from the drinkData object, loop over them, only consider non null entries, and if the key contains 'strIngredient', we push the value, voila!
+            </p>                
+        </section>
+    </main>
+</body>
+</html>

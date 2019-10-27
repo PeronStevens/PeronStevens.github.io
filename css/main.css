@@ -81,7 +81,17 @@ ul {
 
 .post-link {
     text-decoration: none;
-    color: #1900b3;
+    color: #fff;
+}
+
+pre {
+    overflow: scroll;
+    max-width: 400px;
+    width: 100%;
+}
+.code-wrap {
+    /* padding: 10px;
+    background: #24282d; */
 }
 
 @media (min-width: 576px) { 
