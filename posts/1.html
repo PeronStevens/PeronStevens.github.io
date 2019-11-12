@@ -58,14 +58,14 @@
                 While tinkering with <a class="link-white" href="https://www.thecocktaildb.com/">TheCocktailDB</a> API, I noticed that it returned a single JSON object, ex:
             </p>
 
-                    <pre>
-                    ... <br>
-                    strIngredient1	"Bourbon" <br>
-                    strIngredient2	"Dark rum" <br>
-                    strIngredient3	"Heavy cream" <br>
-                    strIngredient4	null <br>
-                    ...
-                    </pre>
+<pre>
+... <br>
+strIngredient1	"Bourbon" <br>
+strIngredient2	"Dark rum" <br>
+strIngredient3	"Heavy cream" <br>
+strIngredient4	null <br>
+...
+</pre>
 
             <p>
                 Endpoint: <a class="link" href="https://www.thecocktaildb.com/api/json/v1/1/random.php">https://www.thecocktaildb.com/api/json/v1/1/random.php</a>
@@ -77,48 +77,48 @@
                 Imagine you have a main component that makes an AJAX request to the endpoint and recieves the JSON, naturally you assign it within your data object.
             </p>
 
-                    <pre>
-                    axios.get('https://www.thecocktaildb.com/api/json/v1/1/random.php') <br>
-                    .then((response) => {            <br>
-                        this.drinkData = response.data.drinks[0]; <br>
-                    })   
-                    </pre>
-        
+<pre>
+axios.get('https://www.thecocktaildb.com/api/json/v1/1/random.php') <br>
+.then((response) => {            <br>
+    this.drinkData = response.data.drinks[0]; <br>
+})   
+</pre>
 
-                    <pre>
-                    data: function() {
-                        return {
-                            drinkData: {}
-                        }
-                    }
-                    </pre>
+
+<pre>
+data: function() {
+    return {
+        drinkData: {}
+    }
+}
+</pre>
 
             <p>
                 For simplicity sake, I will only focus on the strIngredient properties. Now lets add an empty array to our data object to only contain the ingredients
             </p>
 
-                    <pre>
-                    data: function() {
-                        return {
-                            drinkData: {},
-                            ingredients: []
-                        }
-                    }
-                    </pre>
+<pre>
+data: function() {
+    return {
+        drinkData: {},
+        ingredients: []
+    }
+}
+</pre>
             <p>
                 Now we can create a new watcher, to iterate over our flat JSON and push ingredients to the array. We simply pass our drinkData object and give it a function to execute when it's populated
             </p>  
-                    <pre>
-                    watch: {
-                        drinkData: function() {
-                            for (let [key, value] of Object.entries(this.drinkData)) {
-                                if (value) {
-                                    if (key.includes('strIngredient')) this.ingredients.push(value)
-                                }
-                            }
-                        }
-                    }
-                    </pre>
+<pre>
+watch: {
+    drinkData: function() {
+        for (let [key, value] of Object.entries(this.drinkData)) {
+            if (value) {
+                if (key.includes('strIngredient')) this.ingredients.push(value)
+            }
+        }
+    }
+}
+</pre>
  
             <p>
                 We use Object.entries to grab the keys and values from the drinkData object, loop over them, only consider non null entries, and if the key contains 'strIngredient', we push the value, voila!
